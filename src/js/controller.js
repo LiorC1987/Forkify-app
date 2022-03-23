@@ -87,7 +87,7 @@ function controlBookmarks() {
 
 async function controlAddRecipe(newRecipe) {
   try {
-    addRecipeView.renderSpinner()
+    // addRecipeView.renderSpinner()
     await model.uploadRecipe(newRecipe);
     recipeView.render(model.state.recipe);
     bookmarkView.render(model.state.bookmarks);
